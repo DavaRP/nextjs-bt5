@@ -22,9 +22,7 @@ export default function News({ data }) {
 }
 
 export const getStaticProps = async () => {
-  const { data } = await axios.get(
-    "https://jsonplaceholder.typicode.com/posts?_limit=6"
-  );
+  const { data } = await axios.get("/posts?_limit=6");
   return {
     props: {
       data,

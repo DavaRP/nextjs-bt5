@@ -13,9 +13,7 @@ const Article = ({ data }) => {
 };
 
 export const getStaticProps = async (context) => {
-  const { data } = await axios.get(
-    `https://jsonplaceholder.typicode.com/posts/${context.params.id}`
-  );
+  const { data } = await axios.get(`/posts/${context.params.id}`);
 
   return {
     props: {
@@ -25,9 +23,7 @@ export const getStaticProps = async (context) => {
 };
 
 export const getStaticPaths = async () => {
-  const { data } = await axios.get(
-    `https://jsonplaceholder.typicode.com/posts`
-  );
+  const { data } = await axios.get(`/posts`);
 
   const ids = data.map((item) => item.id);
   const paths = ids.map((id) => ({
