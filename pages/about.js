@@ -1,7 +1,5 @@
-import axios from "axios";
 import Meta from "../components/Head";
-import styles from "../styles/Home.module.css";
-export default function Home() {
+export default function About() {
   return (
     <>
       <Meta
@@ -10,7 +8,7 @@ export default function Home() {
         keywords="next js, bootstrap 5, boilerplate"
       />
       <div className="container">
-        <h1 className="mb-0">Home</h1>
+        <h1 className="mb-0">About</h1>
       </div>
     </>
   );
