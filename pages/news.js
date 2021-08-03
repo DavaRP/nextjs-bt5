@@ -2,7 +2,6 @@ import axios from "axios";
 import Meta from "../components/Head";
 import ArticleList from "../components/ArticleList";
 export default function News({ data }) {
-  console.log(data);
   return (
     <>
       <Meta

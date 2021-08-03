@@ -1,5 +1,5 @@
 .wrapper {
-  min-height: calc(100vh - 120px - 72px);
+  min-height: calc(100vh - 40px - 72px);
   display: flex;
   align-items: center !important;
   justify-content: center;
@@ -8,4 +8,5 @@
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }

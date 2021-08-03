@@ -10,7 +10,7 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <Link href="/">
-            <Image src={NavbarImage} height="20" width="100" />
+            <Image src={NavbarImage} height={20} width={100} />
           </Link>
           <button
             className="navbar-toggler"
